@@ -699,24 +699,16 @@ function initializePricingSection() {
         card.addEventListener('click', function(e) {
             // Don't trigger card click if button was clicked
             if (e.target.closest('.pricing-cta')) return;
-            
-            // Toggle active state
-            const isFeatured = this.classList.contains('featured');
-            
+
             // Remove active class from all cards
             pricingCards.forEach(c => c.classList.remove('active'));
-            
-            // Add active class to clicked card (if not featured)
-            if (!isFeatured) {
-                this.classList.add('active');
-                
-                // Log selection
-                const cardTitle = this.querySelector('.pricing-card-title').textContent;
-                console.log(`Pricing plan selected: ${cardTitle}`);
-                
-                // Announce to screen readers
-                announceToScreenReader(`Selected ${cardTitle} pricing plan`);
-            }
+
+            // Log selection
+            const cardTitle = this.querySelector('.pricing-card-title').textContent;
+            console.log(`Pricing plan selected: ${cardTitle}`);
+
+            // Announce to screen readers
+            announceToScreenReader(`Selected ${cardTitle} pricing plan`);
         });
         
         // Keyboard navigation
@@ -813,17 +805,19 @@ function initializePricingSection() {
     // Add CSS for focus states
     const focusStyle = document.createElement('style');
     focusStyle.textContent = `
+        .pricing-card:focus,
+        .pricing-card:focus-visible,
         .pricing-card.focused {
-            outline: 2px solid var(--color-primary);
-            outline-offset: 4px;
+            outline: none;
+            box-shadow: none;
         }
         
         .pricing-card.active {
-            border: 2px solid var(--color-primary);
+            border: 1px solid var(--color-border);
         }
         
         .pricing-card.featured.active {
-            border: 2px solid var(--color-white);
+            border: 1px solid var(--color-primary);
         }
     `;
     document.head.appendChild(focusStyle);
@@ -1138,23 +1132,11 @@ function initializeValueSection() {
             .value-headline-emphasis {
                 position: relative;
                 display: inline-block;
+                text-decoration: none;
             }
             
             .value-headline-emphasis::after {
-                content: '';
-                position: absolute;
-                bottom: -2px;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                background-color: var(--color-primary);
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: transform 0.6s ease;
-            }
-            
-            .value-text.visible .value-headline-emphasis::after {
-                transform: scaleX(1);
+                display: none;
             }
         `;
         document.head.appendChild(pulseStyle);
