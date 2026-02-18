@@ -30,8 +30,9 @@
           <ul class="nav-links">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About us</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Pricing</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li class="mobile-only"><a href="#contact">Contact us</a></li>
           </ul>
         </nav>
 
@@ -234,72 +235,74 @@
         </button>
 
         <!-- Project Cards Container -->
-        <div class="projects-container">
-          <!-- Project Card 1 (Active) -->
-          <article class="project-card active">
-            <div class="project-content">
-              <div class="project-info">
-                <h3 class="project-name">Business Website Redesign</h3>
-                <p class="project-description">
-                  Redesigned and built a responsive business website focused
-                  on improving clarity, structure, and overall user
-                  experience. The goal was to simplify navigation, highlight
-                  key services, and create a layout that communicates value
-                  quickly to visitors. Along with the visual redesign, the
-                  frontend was built to be fast, responsive, and easy to
-                  maintain, ensuring consistent performance across devices
-                  while supporting better lead generation through clear
-                  calls-to-action.
-                </p>
-                <button class="project-cta">View Project</button>
+        <div class="projects-mask">
+          <div class="projects-container">
+            <!-- Project Card 1 (Active) -->
+            <article class="project-card active">
+              <div class="project-content">
+                <div class="project-info">
+                  <h3 class="project-name">Business Website Redesign</h3>
+                  <p class="project-description">
+                    Redesigned and built a responsive business website focused
+                    on improving clarity, structure, and overall user
+                    experience. The goal was to simplify navigation, highlight
+                    key services, and create a layout that communicates value
+                    quickly to visitors. Along with the visual redesign, the
+                    frontend was built to be fast, responsive, and easy to
+                    maintain, ensuring consistent performance across devices
+                    while supporting better lead generation through clear
+                    calls-to-action.
+                  </p>
+                  <button class="project-cta">View Project</button>
+                </div>
+                <div class="project-visual">
+                  <img src="project carousel img/Mask group.png" alt="Project preview" class="project-single-image" />
+                </div>
               </div>
-              <div class="project-visual">
-                <img src="project carousel img/Mask group.png" alt="Project preview" class="project-single-image" />
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Project Card 2 -->
-          <article class="project-card">
-            <div class="project-content">
-              <div class="project-info">
-                <h3 class="project-name">E-commerce Platform Redesign</h3>
-                <p class="project-description">
-                  Complete redesign of an e-commerce platform focusing on
-                  improving conversion rates and user experience. Implemented
-                  modern design principles, streamlined checkout process, and
-                  enhanced product discovery. The new design resulted in a 35%
-                  increase in conversions and improved mobile shopping
-                  experience.
-                </p>
-                <button class="project-cta">View Project</button>
+            <!-- Project Card 2 -->
+            <article class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <h3 class="project-name">E-commerce Platform Redesign</h3>
+                  <p class="project-description">
+                    Complete redesign of an e-commerce platform focusing on
+                    improving conversion rates and user experience. Implemented
+                    modern design principles, streamlined checkout process, and
+                    enhanced product discovery. The new design resulted in a 35%
+                    increase in conversions and improved mobile shopping
+                    experience.
+                  </p>
+                  <button class="project-cta">View Project</button>
+                </div>
+                <div class="project-visual">
+                  <img src="project carousel img/Mask group.png" alt="Project preview" class="project-single-image" />
+                </div>
               </div>
-              <div class="project-visual">
-                <img src="project carousel img/Mask group.png" alt="Project preview" class="project-single-image" />
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <!-- Project Card 3 -->
-          <article class="project-card">
-            <div class="project-content">
-              <div class="project-info">
-                <h3 class="project-name">SaaS Dashboard Interface</h3>
-                <p class="project-description">
-                  Designed and developed a comprehensive SaaS dashboard for
-                  data analytics platform. Focused on creating an intuitive
-                  interface for complex data visualization while maintaining
-                  performance and scalability. Implemented responsive design
-                  that works seamlessly across desktop, tablet, and mobile
-                  devices.
-                </p>
-                <button class="project-cta">View Project</button>
+            <!-- Project Card 3 -->
+            <article class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <h3 class="project-name">SaaS Dashboard Interface</h3>
+                  <p class="project-description">
+                    Designed and developed a comprehensive SaaS dashboard for
+                    data analytics platform. Focused on creating an intuitive
+                    interface for complex data visualization while maintaining
+                    performance and scalability. Implemented responsive design
+                    that works seamlessly across desktop, tablet, and mobile
+                    devices.
+                  </p>
+                  <button class="project-cta">View Project</button>
+                </div>
+                <div class="project-visual">
+                  <img src="project carousel img/Mask group.png" alt="Project preview" class="project-single-image" />
+                </div>
               </div>
-              <div class="project-visual">
-                <img src="project carousel img/Mask group.png" alt="Project preview" class="project-single-image" />
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
 
         <!-- Carousel Indicators -->
@@ -342,7 +345,7 @@
               <span class="pricing-from">From</span>
               <span class="pricing-currency">₹</span>
               <span class="pricing-value">25,000</span>
-              <span class="pricing-suffix">+</span>
+              <span class="pricing-suffix">/ m</span>
             </div>
             <ul class="pricing-features">
               <li class="pricing-feature">
@@ -377,7 +380,7 @@
               <span class="pricing-from">From</span>
               <span class="pricing-currency">₹</span>
               <span class="pricing-value">35,000</span>
-              <span class="pricing-suffix">+</span>
+              <span class="pricing-suffix">/ m</span>
             </div>
             <ul class="pricing-features">
               <li class="pricing-feature">
@@ -479,9 +482,7 @@
         <!-- Right Column: Illustration Container -->
         <div class="value-visual">
           <div class="illustration-container">
-            <img
-              src="Mask group.png"
-              alt="Design process and collaboration illustration" class="illustration-image" />
+            <img src="image 40.png" alt="Design process and collaboration illustration" class="illustration-image" />
             <div class="illustration-overlay">
               <div class="overlay-text">
                 <span class="overlay-icon"><i class="fas fa-pencil-ruler"></i></span>
@@ -514,25 +515,23 @@
           <!-- Email -->
           <a href="mailto:hello@designerportfolio.com" class="contact-icon" aria-label="Send an email">
             <div class="icon-circle">
-              <i class="fas fa-envelope"></i>
+              <img src="letsconnect img/Vector (1).png" alt="Email icon" class="contact-icon-img">
             </div>
-            <span class="icon-label">Email</span>
+
           </a>
 
           <!-- WhatsApp -->
           <a href="https://wa.me/911234567890" target="_blank" class="contact-icon" aria-label="Chat on WhatsApp">
             <div class="icon-circle">
-              <i class="fab fa-whatsapp"></i>
+              <img src="letsconnect img/brand-whatsapp - iconSvg.co.png" alt="WhatsApp icon" class="contact-icon-img">
             </div>
-            <span class="icon-label">WhatsApp</span>
           </a>
 
           <!-- Phone -->
           <a href="tel:+911234567890" class="contact-icon" aria-label="Call on phone">
             <div class="icon-circle">
-              <i class="fas fa-phone"></i>
+              <img src="letsconnect img/Group (1).png" alt="Phone icon" class="contact-icon-img">
             </div>
-            <span class="icon-label">Phone</span>
           </a>
         </div>
       </div>
@@ -567,8 +566,8 @@
               <li><a href="#home" class="footer-link">Home</a></li>
               <li><a href="#about" class="footer-link">About us</a></li>
               <li><a href="#services" class="footer-link">Features</a></li>
-              <li><a href="#projects" class="footer-link">Projects</a></li>
-              <li><a href="#pricing" class="footer-link">Pricing</a></li>
+              <li><a href="projects.html" class="footer-link">Projects</a></li>
+              <li><a href="pricing.html" class="footer-link">Pricing</a></li>
               <li><a href="#contact" class="footer-link">Contact us</a></li>
             </ul>
           </nav>
@@ -579,31 +578,22 @@
           <h3 class="footer-heading">Get in Touch</h3>
           <div class="contact-info">
             <div class="contact-item">
-              <span class="contact-icon">
+              <span class="footer-contact-icon">
                 <i class="fas fa-envelope"></i>
               </span>
-              <div class="contact-details">
-                <span class="contact-label">Email:</span>
-                <a href="mailto:hello@asquared.digital" class="contact-link">hello@asquared.digital</a>
-              </div>
+              <span class="contact-text">Email: hello@asquared.digital</span>
             </div>
             <div class="contact-item">
-              <span class="contact-icon">
+              <span class="footer-contact-icon">
                 <i class="fab fa-whatsapp"></i>
               </span>
-              <div class="contact-details">
-                <span class="contact-label">WhatsApp:</span>
-                <a href="https://wa.me/911234567890" target="_blank" class="contact-link">Chat on WhatsApp</a>
-              </div>
+              <span class="contact-text">WhatsApp: Chat on WhatsApp</span>
             </div>
             <div class="contact-item">
-              <span class="contact-icon">
+              <span class="footer-contact-icon">
                 <i class="fas fa-calendar-alt"></i>
               </span>
-              <div class="contact-details">
-                <span class="contact-label">Book a Call:</span>
-                <a href="#contact" class="contact-link">Schedule a call</a>
-              </div>
+              <span class="contact-text">Book a Call: Schedule a call</span>
             </div>
           </div>
         </div>
